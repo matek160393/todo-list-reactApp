@@ -1,0 +1,29 @@
+.section__buttons {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+@media (max-width: 767px) {
+    .section__buttons {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+}
+
+.section__button {
+    cursor: pointer;
+    border: none;
+    background-color: #ffffff;
+    color: hsl(180, 100%, 29%);
+    transition: 1s;
+}
+
+.section__button:disabled {
+    cursor: default;
+    color: #808080 !important;
+}
+
+.section__button:hover {
+    color: hsla(180, 99%, 34%, 0.757);
+}
