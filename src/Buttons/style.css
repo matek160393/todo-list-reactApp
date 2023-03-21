@@ -1,17 +1,17 @@
-.section__buttons {
+.buttons {
     display: grid;
     grid-template-columns: auto auto;
 }
 
 @media (max-width: 767px) {
-    .section__buttons {
+    .buttons {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 20px;
     }
 }
 
-.section__button {
+.buttons__button {
     cursor: pointer;
     border: none;
     background-color: #ffffff;
@@ -19,11 +19,11 @@
     transition: 1s;
 }
 
-.section__button:disabled {
+.buttons__button:disabled {
     cursor: default;
     color: #808080 !important;
 }
 
-.section__button:hover {
+.buttons__button:hover {
     color: hsla(180, 99%, 34%, 0.757);
 }
